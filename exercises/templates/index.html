@@ -7,6 +7,13 @@
     <body>
         <h1>Sports</h1>
 
-        <p>Sports are the BEST</p>
+        
+        {% if likes_same_sports == True%}
+                <ul>
+                    <li> {{sport}} </li>
+                </ul>
+        {% else %}
+                <p>Sports are the BEST</p>
+            {% endif %}
     </body>
 </html>
